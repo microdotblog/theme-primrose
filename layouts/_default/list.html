@@ -6,7 +6,7 @@
 
     <article class="post h-entry">
 	  {{ if .Title }}
-		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<h1><a href="{{ .Permalink }}" class="p-name">{{ .Title }}</a></h1>
 	  {{ end }}
       <div class="e-content">{{ .Content }}</div>
       <footer class="post__footer">
