@@ -3,6 +3,9 @@
   {{ if .Title }}
     <h1 class="p-name">{{ .Title }}</h1>
   {{ end }}
+  {{ with .Params.audio }}
+    <script type="text/javascript" src="https://micro.blog/narration.js?url={{ . }}"></script>
+  {{ end }}
   <div class="e-content">
   {{ .Content }}
   </div>
