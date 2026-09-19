@@ -1,3 +1,3 @@
 <footer class="footer {{ if eq .Type "post" }}footer--single{{ end }}" role="contentinfo">
-  <small class="copyright">&copy; {{ .Date.Format "2006" }} <a href="/">{{ .Site.Author.name }}</a>. {{ .Site.Params.description | safeHTML }}</small>
+  <small class="copyright">&copy; {{ .Date.Format "2006" }} <a href="/">{{ .Site.Params.author.name }}</a>. {{ .Site.Params.description | safeHTML }}</small>
 </footer>
